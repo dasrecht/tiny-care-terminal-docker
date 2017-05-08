@@ -1,23 +1,28 @@
 # tiny-care-terminal in docker
 
-[tiny-care-terminal](https://github.com/notwaldorf/tiny-care-terminal) as a Docker container.
+[tiny-care-terminal](https://github.com/notwaldorf/tiny-care-terminal) in a Docker container.
 
 *Why?*
 Why not?
 
 # Build Locally
 
+```
 docker build . --tag dasrecht/tiny-care-terminal
+```
 
 # RUN
+
+```
 docker run -it --rm \
   --name tiny-care-terminal \
   dasrecht/tiny-care-terminal
+```
 
 
 ## Bash Function
 
-Adapt and add this to suit your needs :)
+Adapt and add this to your bash files :)
 
 ```
 tiny-care-terminal(){
