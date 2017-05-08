@@ -8,7 +8,7 @@ Why not?
 # Build Locally
 
 ```
-docker build . --tag dasrecht/tiny-care-terminal
+docker build . --tag dasrecht/tiny-care-terminal-docker
 ```
 
 # RUN
@@ -16,7 +16,7 @@ docker build . --tag dasrecht/tiny-care-terminal
 ```
 docker run -it --rm \
   --name tiny-care-terminal \
-  dasrecht/tiny-care-terminal
+  dasrecht/tiny-care-terminal-docker
 ```
 
 
@@ -38,6 +38,6 @@ tiny-care-terminal(){
     -e TTC_CONSUMER_SECRET=xxx \  # Update to use Twitter
     -e TTC_ACCESS_TOKEN=xxx \  # Update to use Twitter
     -e TTC_ACCESS_TOKEN_SECRET=xxx \  # Update to use Twitter
-    dasrecht/tiny-care-terminal
+    dasrecht/tiny-care-terminal-docker
 }
 ```
