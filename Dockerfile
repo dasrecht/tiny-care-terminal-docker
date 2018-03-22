@@ -1,7 +1,7 @@
 FROM node:alpine
 MAINTAINER Bastian Widmer <b.widmer@dasrecht.net>
 
-RUN apk add --update bash git && rm -rf /var/cache/apk/*
+RUN apk add --update bash git python make gcc g++ && rm -rf /var/cache/apk/*
 
 RUN yarn global add https://github.com/notwaldorf/tiny-care-terminal
 RUN yarn global add git-standup
